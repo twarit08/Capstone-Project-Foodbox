@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="jumbotron mt-5 bg-light" style="opacity: 0.8;">
+        <h1 class="text-center display-4 font-weight-bold" style="font-family: 'Lucida Handwriting', cursive;">Foodbox
+        </h1>
+        <h4 class="text-center" style="font-family: 'Brush Script MT', cursive;">We endeavors not only to serve food
+            of the highest quality but also
+            to take you on a mouthwatering adventure. </h4>
+
+    </div>
+    <div class="row">
+        <div class="col-6 mx-auto">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><img src="assets/Images/search-icon.png" alt=""></span>
+                </div>
+                <input type="text" class="form-control bg-dark text-light" placeholder="Search cuisine or a dish..."
+                    [(ngModel)]="foodItemName" (keydown.enter)="searchFoodItem(foodItemName)">
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3 class="text-warning">Order food from available cuisines:</h3>
+
+    <div class="card-columns mb-4">
+
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/north-indian.jpg"
+                alt="north-indian.jpg" style="opacity: 0.7;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/NORTH INDIAN" class="btn btn-dark">North Indian</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/chinese.jpg" alt="chinese.jpg"
+                style="opacity: 0.7;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/CHINESE" class="btn btn-dark">Chinese</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/south-indian.jpg"
+                alt="south-indian.jpg" style="opacity: 0.8;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/SOUTH INDIAN" class="btn btn-dark">South Indian</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/italian.jpg" alt="italian.jpg"
+                style="opacity: 0.8;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/ITALIAN" class="btn btn-dark">Italian</a>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/gujarati.jpg" alt="gujarati.jpg"
+                style="opacity: 0.8;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/GUJARATI" class="btn btn-dark">Gujarati</a>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" width="100%" height="100%" src="assets/Images/mexican.jpg" alt="mexican.jpg"
+                style="opacity: 0.7;">
+            <div class="card-img-overlay">
+                <div class="text-center">
+                    <a routerLink="/get/cuisine/MEXICAN" class="btn btn-dark">Mexican</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

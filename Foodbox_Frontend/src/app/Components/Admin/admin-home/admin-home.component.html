@@ -1,0 +1,39 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="text-center">Welcome Admin: <span class="text-success">{{name}}</span></h1>
+        <p class="text-center">({{username}})</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card bg-primary">
+                    <img class="card-img-top" src="assets/Images/food-item.png" alt="food-item.png"
+                        style="width:100%; height:250px;">
+                    <div class="card-footer text-center">
+                        <a role="button" class="btn btn-danger btn-block" routerLink="/admin/add/new-product">Add a Food
+                            Item</a>
+                    </div>
+                </div>
+                <div class="card bg-warning">
+                    <img class="card-img-top" src="assets/Images/show-food-items.png" alt="show-food-items.png"
+                        style="width:100%; height:250px;">
+                    <div class="card-footer text-center">
+                        <a role="button" class="btn btn-danger btn-block" routerLink="/admin/get/all-products">Show All
+                            Food Items</a>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <img class="card-img-top" src="assets/Images/show-orders.png" alt="show-orders.png"
+                        style="width:100%; height:250px;">
+                    <div class="card-footer text-center">
+                        <a role="button" class="btn btn-danger btn-block" routerLink="/get/all-orders">Show All
+                            Orders</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

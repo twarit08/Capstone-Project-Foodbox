@@ -1,0 +1,13 @@
+<header>
+    <app-navbar></app-navbar>
+</header>
+<router-outlet></router-outlet>
+<footer>
+    <div class="fixed-bottom">
+        <small *ngIf="!loginService.isLoggedIn()" class="bg-light">&#169; 2014-2023- Foodbox. Designed & Developed by <a
+                routerLink="/admin/login">Twarit
+                Soni</a>.</small>
+        <small *ngIf="loginService.isLoggedIn()" class="bg-light">&#169; 2014-2023- Foodbox. Designed & Developed by
+            Twarit Soni.</small>
+    </div>
+</footer>
